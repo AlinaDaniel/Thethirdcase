@@ -19,6 +19,12 @@ for year in range (1, years + 1):
     print ("-------------------------------------------")
 
 # TODO (Zaitseva A): Make a function.
+d = 1
+cost = (initial_capital * (1 + (percent / 100 * (d/12)))) **years
+
+while initial_capital < ? :
+    cost = initial_capital + (initial_capital * (percent/100))
+    initial_capital += investment_infusion
 
 pass
 
