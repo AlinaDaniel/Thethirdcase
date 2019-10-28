@@ -6,7 +6,7 @@
 
 # Developers:   Zemtseva A. (40%),
 #               Zaitseva A. (35%),
-#               Daniel A.   (%).
+#               Daniel A.   (45%).
 
 
 # The program offers the user to select the language.
