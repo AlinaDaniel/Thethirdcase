@@ -7,16 +7,24 @@
 #               Zaitseva A. (%),
 #               Daniel A.   (%).
 
-years = int(input("Срок размещения капитала (лет): "))
-initial_capital = float(input("Начальный капитал ($): "))
-percent = float(input("Процентная ставка (%/мес.): "))
-investment_infusion = float(input("Инвестиционные вливания ($/мес.): "))
+language = str(input('Выберите язык: / Choose language: / Choisissez votre langue: '))
+if language.lower() == 'русский':
+    import local_rus as lc
+elif language.lower() == 'english':
+    import local_eng as lc
+elif language.lower() == 'francais':
+    import local_fr as lc
 
-for year in range (1, years + 1):
-    print(year, "год")
+years = int(input(lc.TХT_PERIOD_OF_INVESTMENT))
+initial_capital = float(input(lc.TXT_INITIAL_CAPITAL))
+percent = float(input(lc.TXT_INTEREST_RATE))
+investment_infusion = float(input(lc.TXT_INVESTMENT_INFUSION))
+
+for year in range(1, years + 1):
+    print(year, lc.TXT_YEAR)
     print("-" * 57)
-    print("|{:^7}|{:^15}|{:^15}|{:^15}|".format("", "основа", "сумма %", ""))
-    print("|{:^7}|{:^15}|{:^15}|{:^15}|".format("месяц", "инвестиций", "за месяц", "капитал"))
+    print(lc.TXT_TABLE_1)
+    print(lc.TXT_TABLE_2)
     print("-" * 57)
     for month in range(1, 13):
         capital = initial_capital * (1 + (percent / 100))
