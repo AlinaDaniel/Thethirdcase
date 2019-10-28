@@ -4,7 +4,7 @@
 # with a monthly capitalization.
 
 
-# Developers:   Zemtseva A. (%),
+# Developers:   Zemtseva A. (40%),
 #               Zaitseva A. (%),
 #               Daniel A.   (%).
 
