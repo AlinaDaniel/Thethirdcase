@@ -5,7 +5,7 @@
 
 
 # Developers:   Zemtseva A. (40%),
-#               Zaitseva A. (%),
+#               Zaitseva A. (35%),
 #               Daniel A.   (%).
 
 
