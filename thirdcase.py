@@ -3,7 +3,6 @@
 # The program displays information for each month on capital investments for several years
 # with a monthly capitalization.
 
-
 # Developers:   Zemtseva A. (40%),
 #               Zaitseva A. (35%),
 #               Daniel A.   (45%).
