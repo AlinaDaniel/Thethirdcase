@@ -11,20 +11,20 @@ years = int(input("Срок размещения капитала (лет): "))
 initial_capital = float(input("Начальный капитал ($): "))
 percent = float(input("Процентная ставка (%/мес.): "))
 investment_infusion = float(input("Инвестиционные вливания ($/мес.): "))
+
 for year in range (1, years + 1):
-    print(year,"год")
-    print("--------------------------------------------")
-    print("|       |   основа   |  сумма %  |         |")
-    print("| месяц | инвестиций | за месяц  | капитал |")
-    print("--------------------------------------------")
+    print(year, "год")
+    print("-" * 57)
+    print("|{:^7}|{:^15}|{:^15}|{:^15}|".format("", "основа", "сумма %", ""))
+    print("|{:^7}|{:^15}|{:^15}|{:^15}|".format("месяц", "инвестиций", "за месяц", "капитал"))
+    print("-" * 57)
+    for month in range(1, 13):
+        capital = initial_capital * (1 + (percent / 100))
+        print("|{:^7}|{:^15.2f}|{:^15.2f}|{:^15.2f}|".format(month, initial_capital, (capital - initial_capital), capital))
+        initial_capital = capital + investment_infusion
+    print("-" * 57)
 
-# TODO (Zaitseva A): Make a function.
-d = 1
-cost = (initial_capital * (1 + (percent / 100 * (d/12)))) **years
-
-while initial_capital < ? :
-    cost = initial_capital + (initial_capital * (percent/100))
-    initial_capital += investment_infusion
+# TODO (Daniel A): Make a function.
 
 pass
 
@@ -32,7 +32,7 @@ pass
 
 pass
 
-# TODO (Zemtseva A): Do code rewiew (PEP8, comments).
+# TODO (Zaitseva A): Do code rewiew (PEP8, comments).
 
 pass
 
@@ -40,7 +40,7 @@ pass
 
 pass
 
-# TODO (Daniel A): Make localization for English language.
+# TODO (Zemtseva A, Daniel A): Make localization for English language.
 
 pass
 
